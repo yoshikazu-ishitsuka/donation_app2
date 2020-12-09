@@ -3,7 +3,7 @@ class DonationsController < ApplicationController
   end
 
   def new
-    @user = User.new(donation_params)
+    @user = User.new
   end
 
   def create
