@@ -7,6 +7,7 @@ class DonationsController < ApplicationController
   end
 
   def create
+    # binding.pry
     @user = User.new(donation_params)
     if @user.valid?
       @user.save
